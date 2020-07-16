@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# 点燃耗计算程序
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from PyQt5.QtWidgets import QVBoxLayout, QMainWindow, QWidget, QLabel, QComboBox, \
     QTabWidget, QMessageBox, QAction, QTextBrowser, QFileDialog, QPushButton,  QHBoxLayout, \
