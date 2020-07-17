@@ -446,7 +446,7 @@ class Main_window(QMainWindow):
         self.Draw_Widget = Main_Widget()
         self.setCentralWidget(self.Draw_Widget)
         self.setWindowTitle("BurnUI-点燃耗计算程序")
-        path = '\Firecolor.ico'
+        path = '\icons\Firecolor.ico'
         self.setWindowIcon(QIcon(getRealPath(path)))
         s = self.Draw_Widget.combo_mode.currentIndex()
         if s == 0:
@@ -457,25 +457,25 @@ class Main_window(QMainWindow):
                                          self.Draw_Widget.ipt_P.text() + "MW" + '  反应堆体积: ' + self.Draw_Widget.ipt_V.text()
                                          + "m^3")
         
-        path = '\Clear.ico'
+        path = '\icons\Clear.ico'
         clearAction = QAction(QIcon(getRealPath(path)), '清空数据, Ctrl+Shift+C', self)
         clearAction.setShortcut('Ctrl+Shift+C')
         clearAction.triggered.connect(self.Draw_Widget.clear)
-        path = '\save.ico'
+        path = '\icons\save.ico'
         savedataAction = QAction(QIcon(getRealPath(path)), '保存数据, Ctrl+S', self)
         savedataAction.setShortcut('Ctrl+S')
         savedataAction.triggered.connect(self.saveData)
-        path = '\save2.ico'
+        path = '\icons\save2.ico'
         savefigureAction = QAction(QIcon(getRealPath(path)), '保存图形, Ctrl+Shift+S', self)
         savefigureAction.setShortcut('Ctrl+Shift+S')
         savefigureAction.triggered.connect(self.saveFigure)
-        path = '\edit.ico'
+        path = '\icons\edit.ico'
         editAction = QAction(QIcon(getRealPath(path)), '修改核数据', self)
         editAction.triggered.connect(self.edit)
-        path = '\help.ico'
+        path = '\icons\help.ico'
         helpAction = QAction(QIcon(getRealPath(path)), '帮助', self)
         helpAction.triggered.connect(self.help)
-        path = '\info.ico'
+        path = '\icons\info.ico'
         infoAction = QAction(QIcon(getRealPath(path)), '关于', self)
         infoAction.triggered.connect(self.show_info)
         self.toolbar = self.addToolBar('Clear')
